@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Language Translator</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        nav{
+            background-color: grey;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+        .about{
+            background-color: rgb(239, 125, 125);
+            text-align: center;
+            font-size: 20px;
+        }
+        .about p{
+            color: white;
+            text-align: justify;
+        }
+        .about a{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>One Page Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="service.html">Services</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate semper dolor non rutrum. Proin erat elit, eleifend sed odio et, viverra gravida mi. Donec suscipit dapibus ante, in aliquam ante aliquet eu. Cras sollicitudin nulla nunc, eget molestie massa blandit sit amet. Nunc dignissim dui neque, ut volutpat ligula convallis ut. Sed condimentum accumsan sapien. Aliquam erat volutpat. Pellentesque in ex erat. Mauris malesuada odio felis, vitae porttitor nisi ullamcorper a. Donec maximus eleifend justo, nec ultrices massa porta ac. Sed tristique nulla quis nunc varius eleifend. Ut venenatis a justo non venenatis. Fusce luctus massa vel ligula pulvinar finibus vitae et ligula. Sed dui erat, tristique sed elit eget, consectetur ornare augue.</p>
+        <a href="#" class="team">Our Team</a>
+
+    </section>
+
+    <p id="demo"></p>
+    <script src="https:translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        
+    </script>
+    
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+            {pagelanguage:"en"},
+            'demo'
+            );
+        }
+
+    </script>
+</body>
+</html>
